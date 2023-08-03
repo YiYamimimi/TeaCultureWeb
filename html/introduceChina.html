@@ -1,0 +1,452 @@
+<!-- 中国历史茶文化 -->
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="茶文化">
+    <meta name="description"
+        content="茶文化介绍">
+    <meta name="author" content="mxbc.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="baidu-site-verification" content="iYCr85cYyJ" />
+    <title>中国历史茶文化</title>
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/swiper_bundle.css">
+    <link rel="stylesheet" href="../css/indexCss.css">
+    <link rel="stylesheet" href="../css/hearderCss.css">
+    <!-- 文字部分引用的css -->
+    <link rel="stylesheet" type="text/css" href="../css/text.css"/>
+    <script type="text/javascript" src="../js/Myjquery.js"></script>
+
+    
+    <style> 
+        #mmm
+        {
+            
+            position:relative;
+            animation:mymove 3s;
+            animation-iteration-count:1;
+            animation-fill-mode:forwards;
+        
+            /* Safari 和 Chrome */
+            -webkit-animation:mymove 3s;
+            -webkit-animation-iteration-count:1;
+            -webkit-animation-fill-mode:forwards;
+        }
+        .inner1{
+            width: 100%;
+            padding-left: 0;
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transition: all .6s ease-out;
+            transition: all .6s ease-out;
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        @keyframes mymove
+        {
+            from {left:0px;}
+            to {left:40px;}
+        }
+        
+        @-webkit-keyframes mymove /* Safari 和 Chrome */
+        {
+            from {left:0px;}
+            to {left:40px;}
+        }
+    </style>
+         <script type="text/javascript">
+            var paramobj = {};
+            window.onload = function () {
+                //此时parameterURL为:name=张三&age=25
+                var parameterURL = location.search.substring(1, location.search.length);
+                //此时paramArr为一个数组:["name=张三","age=25"]
+                var paramArr = parameterURL.split("&");
+                var key,value,temp;
+                //定义2个变量接收key，value并存到paramobj中
+                for (i = 0; i < paramArr.length; i++) {
+                    temp = paramArr[i].split("=");
+                    if (temp.length === 1) {
+                        paramobj[temp[0]] = "";
+                    }
+                    else if(temp.length>1){
+                        for (j = 0; j < temp.length; j++) {
+                            paramobj[temp[0]] = decodeURIComponent(temp[1]);
+                        }
+                    }
+                }
+                //此时参数已全部保存至paramobj中,这里显示到div
+                var showStr="";
+                for (var a in paramobj) {
+                    showStr += (paramobj[a]);
+                }
+                document.getElementById("showParam").innerText = showStr;
+            }
+        </script>
+</head>
+
+<body class="cooperation has-bgPic">
+    <header class="header">
+        <div class="header-main relative">
+            <nav class="header-nav larze-head__nav">
+                <a href="/" class="item-logo">
+                    <img src="../img/logo.jpg" alt="">
+                </a>
+                <ul class="header-menu">
+
+                    <!--首页-->
+                    <li class="item-nav">
+                        <a href="../html/FirstPage.html" class="item-ltn  ">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首页<p></p>
+                        </a>
+                        <span></span>
+
+                        <a href="../html/FirstPage.html" class="item-stn  ">
+                            首页
+                            <i class="icon-next"></i>
+                        </a>
+                    </li>
+                    <li class="item-nav">
+                        <a href="../html/shoplist.html" class="item-ltn  ">
+                            &nbsp;&nbsp;茶叶介绍<p></p>
+                        </a>
+                        <span></span>
+
+                        <a href="../html/shoplist.html" class="item-stn  ">
+                            茶叶介绍
+                            <i class="icon-next"></i>
+                        </a>
+                    </li>
+                    <li class="item-nav">
+                        <a href="../html/introduceChina.html" class="item-ltn  ">
+                            中国历史茶文化<p></p>
+                        </a>
+                        <span></span>
+
+                        <a href="../html/introduceChina.html" class="item-stn ">
+                            中国历史茶文化
+                            <i class="icon-next"></i>
+                        </a>
+
+                        <div class="subnav-wrap">
+
+                            <div class="subNav-menu">
+                                <ul>
+                                    <li>
+
+                                        <a href="../html/introduceChina.html#三国以前茶文化">三国前茶文化</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/introduceChina.html#晋代茶文化">晋代茶文化</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/introduceChina.html#隋唐茶文化">隋唐茶文化</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/introduceChina.html#宋代茶文化">宋代茶文化</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/introduceChina.html#明清茶文化">明清茶文化</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/introduceChina.html#现代的发展">现代的发展</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-nav">
+                        <a href="../html/enjoyTea.html" class="item-ltn ">
+                            外国饮茶文化<p></p>
+                        </a>
+                        <span></span>
+
+                        <a href="../html/enjoyTea.html" class="item-stn ">
+                            外国饮茶文化<i class="icon-next"></i>
+                        </a>
+
+                        <div class="subnav-wrap">
+
+                            <div class="subNav-menu">
+                                <ul>
+                                    <li>
+
+                                        <a href="../html/enjoyTea.html#美国饮茶文化">美国</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/enjoyTea.html#英国饮茶文化">英国</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/enjoyTea.html#法国饮茶文化">法国</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/enjoyTea.html#巴基斯坦饮茶文化">巴基斯坦</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/enjoyTea.html#俄罗斯饮茶文化">俄罗斯</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/enjoyTea.html#伊朗饮茶文化">伊朗</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/enjoyTea.html#韩国饮茶文化">韩国</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/enjoyTea.html#日本饮茶文化">日本</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+            </nav>
+        </div>
+    </header>
+
+
+    <!--logo-->
+    <h1 class="top_logo" style="font-size:0;"><a
+            style="display:block;width:0%;height:0%; background: url(https://www.mxbc.com/media/upload/sycp/logo.png);"
+            href="https://www.mxbc.com/" title="蜜雪冰城">蜜雪冰城</a>
+    </h1>
+
+        <div class="rbtControl">
+            <img src="https://pic.imgdb.cn/item/6397e944b1fccdcd36a5bdf9.jpg" width="100%">
+            <div class="textBox wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+                <h3>前言<a name="综述"></a></h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国是茶的故乡，是世界上最早发现中国茶树、利用中国茶叶和栽培中国茶树的国家，中国也是世界茶道的宗主国，任何国家受中国茶文化的影响都不能否认中国是茶道宗主国的地位，否则违背了茶道的基本文明。茶树的起源至少已有六七万年的历史。茶被人类发现和利用，大约有四五千年的历史。</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;茶的利用最初是孕育于野生采集活动之中的。古史传说中认为“神农乃玲珑玉体，能见其肺肝五脏”，理由是，“若非玲珑玉体，尝药一日遇十二毒，何以解之。”又有说“神农尝百草，日遇七十二毒，得茶而解之。”两说虽均不能尽信，但一缕微弱的信息却值得注意：“茶”在长久的食用过程中，人们越来注重它的某些疗病的“药”用之性。这反映的是一种洪荒时代的传佚之事。</p>
+                 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;依照《诗经》等有关文献记录，在史前期，“荼”是泛指诸类苦味野生植物性食物原料的，从发现了茶的其他价值后才有了独立的名字“茶”。在食医合一的历史时代，茶类植物油的止渴、清神、消食、除瘴、利便等到药用功能是不难为人们所发现的。然而，由一般性的药用发展为习常的专用饮料，还必须有某种特别的的因素，即人们实际生活中的某种特定需要。巴蜀地区，向为疾疫多发的“烟瘴”之地。“番民以茶为生，缺之必病。”（清·周蔼联《竺国游记》卷二）故巴蜀人俗常饮食偏辛辣，积习数千年，至今依然。正是这种地域自然条件和由此决定的人们的饮食习俗，使得巴蜀人首先“煎茶”服用以除瘴气，解热毒。久服成习，药用之旨逐渐隐没，茶于是成了一种日常饮料。秦人入巴蜀时，见到的可能就是这种作为日常饮料的饮茶习俗。</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;茶由药用转化为习常饮料，严格意义的“茶”便随之产生了，其典型标志便是“茶”（cha）音的出现。郭璞注《尔雅·释木》“槚”云：“树小如栀子，冬生叶，可煮作羹饮。今呼早采者为茶，晚取者为茗，一名荈，蜀人名之苦荼。”可见，汉时“荼”字已有特指饮料“茶”的读音了，“茶”由“荼”分离出来，并走上了“独立”发展道路。但“茶”字的出现则是伴随茶事的发展和商业活动的日益频繁，直到中唐以后的事，也正符合新符号的产生后于人们的社会生活这样一种文字变化的规律。</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国从何时开始饮茶，众说不一，西汉时已有饮茶之事的正式文献记载，饮茶的起始时间当比这更早一些。茶以文化面貌出现，是在汉魏两晋南北朝时期。</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;茶文化从广义上讲，分茶的自然科学和茶的人文科学两方面，是指人类社会历史实践过程中所创造的与茶有关的物质财富和精神财富的总和。从狭义上讲，着重于茶的人文科学，主要指茶对精神和社会的功能。由于茶的自然科学已形成独立的体系，因而，常讲的茶文化偏重于人文科学。</p>
+            </div>
+
+            <br/><br/><br/><br/><br/><br/>
+            <h3><a name="三国以前茶文化"></a></h3>
+            <img src="https://pic.imgdb.cn/item/6397e944b1fccdcd36a5bdf9.jpg" width="100%"></img>
+            <div class="textBox wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+                <h3>三国以前茶文化</h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我国史籍中常有“茶能醒酒”的记载，这里的“酲”，或许是醒之误。如果说汉代茶的传播主要还只显于荆楚或长江中游的话，那么，三国和两晋时，江南和浙江沿海的我国东部地区，茶叶的饮用和生产也逐渐传播开来了。</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;先说三国的史实。据《三国志·吴书》记载：孙“皓每飨宴，无不竟日。坐席无能否，率以其升为限，孙皓是三国时吴国的末帝，接位前为乌程（今浙江湖州）侯，此内容当记述的是永安三年（260年）以后的事情。因为其接位之初，效法孙权一度曾把京城迁至武昌，以图抗衡和进攻中原，但第二年便迁回建业（今南京），并渐渐变成为骄纵残忍的一个暴君。</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;三国吴和东晋均定都现在的南京，由于达官贵人特别是东晋北方士族的集结、移居，今苏南和浙江的所谓江东一带，在这一政治和经济背景下，作为茶业发展新区，其茶业和茶业文化在这一阶段中，自然较之全国其他地区，也就明显更快地发展了起来。</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首先从茶的饮用来看，如果说三国江东茶的饮用还主要流行于宫廷和望族之家的话，那么到东晋时，茶便成为建康和三吴地区的一般待客之物。</p>
+            </div>
+
+            <br/><br/><br/><br/><br/><br/>
+            <h3><a name="晋代茶文化"></a></h3>
+            <img src="https://pic.imgdb.cn/item/6397e944b1fccdcd36a5bdf9.jpg" width="100%">
+            <div class="textBox wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+                <h3>晋代茶文化</h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;随着文人饮茶之兴起，有关茶的诗词歌赋日渐问世，茶已经脱离作为一般形态的饮食走入文化圈，起着一定的精神、社会作用。两晋南北朝时期，门阀制度业已形成，不仅帝王、贵族聚敛成风，一般官吏乃至士人皆以夸豪斗富为荣，多效膏梁厚味。在此情况下，一些有识之士提出“养廉”的问题。于是，出现了陆纳、桓温以茶代酒之举。南齐世祖武皇帝是个比较开明的帝王，他不喜游宴，死前下遗诏，说他死后丧礼要尽量节俭，不要以三牲为祭品，只放些干饭、果饼和茶饭便可以。并要“天下贵贱，咸同此制。”在陆纳、桓温、齐武帝那里，饮茶不仅为了提神解渴，它开始产生社会功以有，成为以茶待客、用以祭祀并表示一种精神、情操的手段。饮茶已不完全是以其自然使用使用价值为人所用，而是进入了精神领域。</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;魏晋南北朝时期，天下骚乱，各种文化思想交融碰撞，玄学相当流行。玄学是魏晋时期一种哲学思潮，主要是以老庄思想糅合儒家经义。玄学家大都是所谓名士，重视门第、容貌、仪止，爱好虚无玄远的清谈。东晋、南朝时，江南的富庶使士人得到暂时的满足，终日流连于青山秀水之间，清淡之风继续发展，以致出现许多清谈家。最初有清谈家多酒徒，后来，清谈之风渐渐发展到一般文人。玄学家喜演讲，普通清谈者也喜高谈阔论。酒能使人兴奋，但喝了多了便会举止失措、胡言乱语，有失雅观。而茶则可竟日长饮而始终清醒，令人思路清晰，心态平和。况且，对一般文人来讲，整天与酒肉打交道，经济条件也不允许。于是，许多玄学家、清谈家从好酒转向好茶。在他们那里，饮茶已经被当作精神现象来对待。</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;随着佛教传入、道教兴起，饮茶已与佛、道教联系起来。在道家看来，茶是帮助炼“内丹”，升清降浊，轻身换骨，修成长生不老之体的好办法；在佛家看来，茶又是禅定入静的必备之物。尽管此时尚未形成完整的宗教饮茶仪式和阐明茶的思想原理，但茶已经脱离作为饮食的物态形式，具有显著的社会、文化功能，中国茶文化初见端倪。</p>
+            </div>
+
+            <br/><br/><br/><br/><br/><br/>
+            <h3><a name="隋唐茶文化"></a></h3>
+            <img src="https://pic.imgdb.cn/item/6397e944b1fccdcd36a5bdf9.jpg" width="100%">
+            <div class="textBox wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+                <h3>隋唐茶文化</h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;根据茶在先前都是药用，在隋朝全民普遍饮茶，也多是认为对身体有益。隋朝基本是初步形成中国茶文化，公元780年，陆羽据此著《茶经》，是隋、唐茶文化形成的专有标志。其概括了茶的自然和人文科学双重内容，探讨了饮茶艺术，把儒、道、佛三教融入饮茶中，创新了中国茶道精神。以后又出现大量茶书、茶诗，有《茶述》、《煎茶水记》、《采茶记》、《十六汤品》等。唐代茶文化的形成与禅教的兴起有关，因茶有提神益思，生津止渴功能，故寺庙崇尚饮茶，在寺院周围植茶树，制定茶礼、设茶堂、选茶头，专呈茶事活动。在唐代形成的中国茶道分宫廷茶道、寺院茶礼、文人茶道。</p>
+            </div>
+
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <h3><a name="宋代茶文化"></a></h3>
+            <img src="https://pic.imgdb.cn/item/6397e944b1fccdcd36a5bdf9.jpg" width="100%">
+            <div class="textBox wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+                <h3>宋代茶文化</h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;宋代茶业已有很大发展，推动了茶叶文化的发展，在文人中出现了专业品茶社团，有官员组成的“汤社”、佛教徒的“千人社”等。宋太祖赵匡胤是位嗜茶之士，在宫廷中设立茶事机关，宫廷用茶已分等级。茶仪已成礼制，赐茶已成皇帝笼络大臣、眷怀亲族的重要手段，还赐给国外使节。至于下层社会，茶文化更是生机活泼，有人迁徙，邻里要“献茶”、有客来，要敬“元宝茶”，定婚时要“下茶”，结婚时要“定茶”，同房时要“合茶”。民间斗茶风起，带来了采制烹点的一系列变化。</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;自元代以后，茶文化进入了曲折发展期。宋人拓展了茶文化的社会层面和文化形式，茶事十分兴旺，但茶艺走向繁复、琐碎、奢侈，失去了唐代茶文化深刻的思想内涵，过于精细的茶艺淹没了茶文化的精神，失去了其高洁深邃的本质。在朝廷、贵族、文人那里，喝茶成了“喝礼儿”、“喝气派”、“玩茶”。</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;元代，一方面，北方少数民族虽也喜欢茶，但主要是出于生活、生理上的需要，从文化上却对品茶煮茗之事举趣不大；另一方面，中国文化人面对故国破碎，异族压迫，也无心再以茶事表现自己的风流倜傥，而希望通过饮茶表现自己的情操，磨砺自己的意志。这两股不同的思想潮流，在茶文化中契合后，促进了茶艺向简约、返璞归真方向发展。明代中叶以前，汉人有感于前代民族举亡，本趄一开国便国事艰难，于是仍怀砺节之志。茶文化仍承元代势，表现为茶艺简约化，茶文化精糖果与自然契合，以茶表现自己的苦节。</p>
+            </div>
+
+            <br/><br/><br/><br/><br/><br/>
+            <h3><a name="明清茶文化"></a></h3>
+            <img src="https://pic.imgdb.cn/item/6397e944b1fccdcd36a5bdf9.jpg" width="100%">
+            <div class="textBox wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+                <h3>明清茶文化</h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;此时已出现蒸青、炒青、烘青等各茶类，茶的饮用已改成“撮泡法”，明代不少文人雅士留有传世之作，如唐伯虎的《烹茶画卷》、《品茶图》，文徵明的《惠山茶会记》、《陆羽烹茶图》、《品茶图》等。茶类的增多，泡茶的技艺有别，茶具的款式、质地、花纹千姿百态。到清朝茶叶出口已成一种正式行业，茶书、茶事、茶诗不计其数。</p>
+            </div>
+
+
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+            <h3><a name="现代的发展"></a></h3>
+            <img src="https://pic.imgdb.cn/item/6397e944b1fccdcd36a5bdf9.jpg" width="100%"> 
+            <div class="textBox wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+                <h3>现代的发展</h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;新中国成立后，中国茶叶从1949的年产7500T发展到1998年的60余万T。茶物质财富的大量增加为中国茶文化的发展提供了坚实的基础，1982年，在杭州成立了第一个以宏扬茶文化为宗旨的社会团体--“茶人之家”，1983年湖北成立“陆羽茶文化研究会”，1990年“中国茶人联谊会”在北京成立，1993年“中国国际茶文化研究会”在湖洲成立，1991年中国茶叶博物馆在杭州西湖乡正式开放。1998年中国国际和平茶文化交流馆建成。随着茶文化的兴起，各地茶艺馆越办越多。国际茶文化研讨会已开到第五，各省各市及主产茶县纷纷主办“茶叶节”，如福建武夷市的岩茶节、云南的普洱茶节，浙江新昌、泰顺、湖北英山、河南信阳的茶叶节不胜枚举。都以茶为载体，促进全面的经济贸易发展。</p>
+                <p>茶对社会生活和社会发展的影响是很大的其影响归纳起来有如下几点：</p>
+                <h6>•<strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong>以茶会友</h6>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以茶联谊，客来敬茶，以茶示礼，提倡“和主贵阳市”，双月刊一步增进友谊，调节社会人际关系。</p>
+                <h6>•<strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong>以茶代酒</h6>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以茶倡廉，提倡茶德和茶人精神，以茶养性，能担提高人们的思想水平，促进社会的精神文明建设。</p>
+                <h6>•<strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong>经茶主媒</h6>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以茶祭祀、茶禅结合，发挥茶的媒介作用和精神寄托作用。</p>
+                <h6>•<strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong>以茶作诗作画</h6>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以茶歌舞，经茶献艺，茶乡旅游，倡导高雅的艺术享受，美化人们和生活。</p>
+                <h6>•<strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong>经茶做菜</h6>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以茶曾食，以茶设宴，提倡茶为国饮，丰富人们的饮食生活。</p>
+                <h6>•<strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong>饮茶健身</h6>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以茶制药，发挥茶的保健功效，提高人们的健康水平。</p>
+            </div>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        </div>
+
+    <script src="../js/wow.js"></script>
+    <script>
+        $(function () {
+            console.log($('.nl-txt-p').html().substr(0, 2))
+            let n = $(".nl-txt-p").offsetHeight
+            for (let i = 0; i < $('.nl-txt-p').html().length; i++) {
+                $('.nl-txt-p').innerHTML = $('.nl-txt-p').html().substr(0, i)
+                if (n < $('.nl-txt-p').scrollHight) {
+                    console.log("执行")
+                    $('.nl-txt-p').style.overflow = 'hidden';
+                    $('.nl-txt-p').innerHTML = $('.nl-txt-p').html().substr(0, i - 3) + '...';
+                    break;
+                }
+            }
+
+
+            var gtBool = true,
+                gtTime = null;
+            gtTime = setInterval(function () {
+                if (gtBool) {
+                    $('.gw-txt').html('<span class="animated textInUp">Loading...</span>')
+                    gtBool = false;
+                } else {
+                    $('.gw-txt').html('<span class="animated textInUp">Loading Completed</span>');
+                    gtBool = true;
+                }
+            }, 500);
+
+            var guide = {
+                star: function () {
+                    var winHegith = $(window).height();
+                    TweenMax.to(".guide-wave", 1, {
+                        height: 0,
+                        delay: .8
+                    });
+                    TweenMax.to(".guide-wrap", .8, {
+                        height: 0,
+                        delay: 1.4
+                    });
+                    TweenMax.to(".gw-logo", 1.5, {
+                        y: -400,
+                        delay: .8
+                    });
+                    TweenLite.fromTo('.gw-txt', .4, {
+                        opacity: 1
+                    }, {
+                        opacity: 0,
+                        delay: .5
+                    });
+                },
+                __init: function () {
+                    guide.star();
+                    clearInterval(gtTime);
+                }
+            }
+
+            // $('.guide-wrap,.statement-wrap').show();
+            guide.__init();
+
+            indexPage.__init();
+            // guide.__init();
+            // if(inCookie.get('inCookie')){
+            //     $('.guide-wrap,.statement-wrap').hide();
+            //     $('body,html').css('no-scroll');
+            // }else{
+            //     $('.guide-wrap,.statement-wrap').show();
+            //     guide.__init();
+            //     inCookie.set('inCookie', 'star', 1);
+            // }
+
+            //窗口高度变化执行
+            function watchWindowSize() {
+                var h = document.documentElement.clientHeight; //窗口高度  不包括滚动条
+                var statementDom = document.getElementById("statement") //获取到“严正声明”内容部分
+                var statementHeight = h - 320 //根据窗口高度设置内容高度
+                statementDom.style.height = statementHeight + 'px' //将高度赋值给元素
+            }
+            window.onload = function () {
+                watchWindowSize()
+            }
+            //监听窗口变化
+            window.addEventListener("resize", watchWindowSize);
+        });
+        var swiperCon = new Swiper('.swiper', {
+            spaceBetween: 10, //在slide之间设置距离（单位px）
+            loop: true,
+            autoplay: true,
+            speed: 500,
+            autoplay: {
+                disableOnInteraction: false, //用户操作swiper之后自动切换不会停止，每次都会重新启动autoplay。
+            },
+            grabCursor: true, //鼠标覆盖Swiper时指针会变成手掌形状，拖动时指针会变成抓手形状。
+            //分页器
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'custom', //分页器类型 自定义
+                clickable: true, //此参数设置为true时，点击分页器的指示点分页器会控制Swiper切换。
+                //自定义特殊类型分页器，当分页器类型设置为自定义时可用。
+                renderCustom: function (swiper, current, total) {
+                    var customPaginationHtml = "";
+                    for (var i = 0; i < total; i++) {
+                        //判断哪个分页器此刻应该被激活
+                        if (i == (current - 1)) {
+                            customPaginationHtml += '<span class="swiper-pagination-customs swiper-pagination-customs-active"></span>';
+                        } else {
+                            customPaginationHtml += '<span class="swiper-pagination-customs"></span>';
+                        }
+                    }
+                    return customPaginationHtml;
+                },
+            },
+        })
+        // 自定义分页器点击切换
+        $(".swiper-pagination").on("click", "span", function () {
+            var index = $(this).index();
+            swiperCon.slideTo(index + 1);
+        })
+    </script>
+
+    <script type="text/javascript">
+        $(function(){
+            var domain = document.domain;
+            if(domain.indexOf('nokov.com.cn') >= 0) {
+                $('.keep_on_record').text('');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

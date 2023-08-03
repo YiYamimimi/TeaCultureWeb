@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* background: url("../resources/login.jpg"); */
+    background-size: cover;
+    background-color: rgba(240, 255, 255, 0.5);
+}
+
+.page {
+    background-color: #efefefef;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 545px;
+    height: 310px;
+    padding: 40px;
+    background: white;
+    box-sizing: border-box;
+    box-shadow: 7px 7px 17px rgba(52, 56, 66, 0.5);
+    border-radius: 10px;
+    /*登录窗口边角圆滑*/
+}
+
+.loginTitle {
+    padding: 0px;
+    color: rgb(0, 161, 215);
+    font-size: 22px;
+    margin-left: 40%;
+    margin-top: 0px;
+}
+
+.box .inputBox {
+    position: relative;
+    margin-left: 2%;
+    width: 450px;
+    height: 48px;
+}
+
+.box .inputItem {
+    text-align: center;
+    line-height: 45px;
+    font-size: 17px;
+    margin-left: 25px;
+    width: 10px;
+}
+
+
+.box .input1 {
+    margin-top: 20px;
+    border: 1px solid rgb(232, 231, 231);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    float: left;
+
+}
+
+.box .input2 {
+    margin-bottom: 10px;
+    border-right: 1px solid rgb(232, 231, 231);
+    border-left: 1px solid rgb(232, 231, 231);
+    border-bottom: 1px solid rgb(232, 231, 231);
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    float: left;
+}
+
+.box .inputBox input {
+    width: 80%;
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    color: black;
+    letter-spacing: 1px;
+    /*输入框设置*/
+    border: none;
+
+    outline: none;
+    background: transparent;
+}
+
+/* 修改输入框的提示文字颜色 */
+input::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: rgb(191, 188, 188);
+}
+
+input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: rgb(191, 188, 188);
+}
+
+input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: rgb(191, 188, 188);
+}
+
+input:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: rgb(191, 188, 188);
+}
+
+/* 登录按钮 */
+.box input[type="submit"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: rgb(0, 161, 215);
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    width: 47%;
+    height: 50px;
+    font-size: 17px;
+}
+
+/* 注册按钮 */
+.box input[type="button"] {
+    color: black;
+    background: #fff;
+    border: 1px solid rgb(230, 228, 228);
+    border-radius: 10px;
+    box-shadow: none;
+    width: 47%;
+    margin-left: 14px;
+    padding: 10px 20px;
+    height: 50px;
+    font-size: 17px;
+}
+
+/* 重置按钮 */
+.box input[type="reset"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: grey;
+    padding: 10px 20px;
+    margin-top: 2%;
+    cursor: pointer;
+    width: 30%;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.b1 {
+    color: grey;
+    font-size: 60px;
+    font-family: "宋体";
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 150px;
+    margin: 50px;
+    padding: 60px;
+    text-shadow: lightgery 1px 2px 1px;
+}

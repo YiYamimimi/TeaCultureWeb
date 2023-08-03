@@ -1,0 +1,123 @@
+ body {
+     /* 字体 */
+     font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-weight: 300;
+ }
+
+ .rbtControl .textBox {
+     margin-top: 36px;
+     padding: 0 20px;
+ }
+
+ .rbtControl .textBox h3 {
+     font-size: 30px;
+     color: #E60012;
+     /*  #183450*/
+     margin-bottom: 30px;
+     margin-bottom: 30px;
+     text-align: center;
+
+ }
+
+ .rbtControl .textBox h6 {
+     /* background: url(../../images/support/line.png) left center no-repeat; */
+     line-height: 36px;
+     font-size: 18px;
+     color: #718092;
+     margin-left: 200px;
+     margin-right: 200px;
+ }
+
+ .rbtControl .textBox p {
+     font-size: 20px;
+     color: #4e5865;
+     line-height: 36px;
+     margin-left: 200px;
+     margin-right: 200px;
+     margin-bottom: 10px;
+ }
+
+ .rbtControl .margItem {
+     margin-top: 35px;
+ }
+
+ @-webkit-keyframes fadeInDown {
+     0% {
+         opacity: 0;
+         -webkit-transform: translateY(-20px);
+         transform: translateY(-20px)
+     }
+
+     100% {
+         opacity: 1;
+         -webkit-transform: translateY(0);
+         transform: translateY(0)
+     }
+ }
+
+ @keyframes fadeInDown {
+     0% {
+         opacity: 0;
+         -webkit-transform: translateY(-20px);
+         -ms-transform: translateY(-20px);
+         transform: translateY(-20px)
+     }
+
+     100% {
+         opacity: 1;
+         -webkit-transform: translateY(0);
+         -ms-transform: translateY(0);
+         transform: translateY(0)
+     }
+ }
+
+ .fadeInDown {
+     -webkit-animation-name: fadeInDown;
+     animation-name: fadeInDown
+ }
+
+ .animated.flip {
+     -webkit-backface-visibility: visible;
+     -ms-backface-visibility: visible;
+     backface-visibility: visible;
+     -webkit-animation-name: flip;
+     animation-name: flip
+ }
+
+ .animated {
+     -webkit-animation-duration: 1s;
+     animation-duration: 1s;
+     -webkit-animation-fill-mode: both;
+     animation-fill-mode: both
+ }
+
+ .animated.infinite {
+     -webkit-animation-iteration-count: infinite;
+     animation-iteration-count: infinite
+ }
+
+ .animated.hinge {
+     -webkit-animation-duration: 2s;
+     animation-duration: 2s
+ }
+
+ .rbtControl .margItem {
+     margin-top: 35px;
+ }
+
+ @font-face {
+     font-family: 'HelveticaNeueLTPro';
+     src: url("../fonts/HelveticaNeueLTProUltLtCn/HelveticaNeueLTPro-UltLtCnO.ttf");
+     /* Safari, Android, iOS */
+     font-weight: normal;
+     text-rendering: optimizeLegibility;
+     font-display: swap;
+ }
+
+ @font-face {
+     font-family: 'SourceHanSansCNExtraLight';
+     src: url('../fonts/SourceHanSansCNExtraLight/SourceHanSansCN-ExtraLight.ttf');
+     font-weight: normal;
+     text-rendering: optimizeLegibility;
+     font-display: swap;
+ }

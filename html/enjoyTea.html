@@ -1,0 +1,486 @@
+<!-- 外国饮茶文化 -->
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="茶文化">
+    <meta name="description"
+        content="茶文化介绍">
+    <meta name="author" content="mxbc.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="baidu-site-verification" content="iYCr85cYyJ" />
+    <title>外国饮茶文化</title>
+    <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/swiper_bundle.css">
+    <link rel="stylesheet" href="../css/indexCss.css">
+    <link rel="stylesheet" href="../css/hearderCss.css">
+    <!-- 文字部分引用的css -->
+    <link rel="stylesheet" type="text/css" href="../css/text.css"/>
+    <script type="text/javascript" src="../js/Myjquery.js"></script>
+
+    <style> 
+        #mmm
+        {
+            
+            position:relative;
+            animation:mymove 3s;
+            animation-iteration-count:1;
+            animation-fill-mode:forwards;
+        
+            /* Safari 和 Chrome */
+            -webkit-animation:mymove 3s;
+            -webkit-animation-iteration-count:1;
+            -webkit-animation-fill-mode:forwards;
+        }
+        .inner1{
+            width: 100%;
+            padding-left: 0;
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transition: all .6s ease-out;
+            transition: all .6s ease-out;
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        @keyframes mymove
+        {
+            from {left:0px;}
+            to {left:40px;}
+        }
+        
+        @-webkit-keyframes mymove /* Safari 和 Chrome */
+        {
+            from {left:0px;}
+            to {left:40px;}
+        }
+    </style>
+         <script type="text/javascript">
+            var paramobj = {};
+            window.onload = function () {
+                //此时parameterURL为:name=张三&age=25
+                var parameterURL = location.search.substring(1, location.search.length);
+                //此时paramArr为一个数组:["name=张三","age=25"]
+                var paramArr = parameterURL.split("&");
+                var key,value,temp;
+                //定义2个变量接收key，value并存到paramobj中
+                for (i = 0; i < paramArr.length; i++) {
+                    temp = paramArr[i].split("=");
+                    if (temp.length === 1) {
+                        paramobj[temp[0]] = "";
+                    }
+                    else if(temp.length>1){
+                        for (j = 0; j < temp.length; j++) {
+                            paramobj[temp[0]] = decodeURIComponent(temp[1]);
+                        }
+                    }
+                }
+                //此时参数已全部保存至paramobj中,这里显示到div
+                var showStr="";
+                for (var a in paramobj) {
+                    showStr += (paramobj[a]);
+                }
+                document.getElementById("showParam").innerText = showStr;
+            }
+        </script>
+</head>
+
+<body class="cooperation has-bgPic">
+    <header class="header">
+        <div class="header-main relative">
+            <nav class="header-nav larze-head__nav">
+                <a href="/" class="item-logo">
+                    <img src="../img/logo.jpg" alt="">
+                </a>
+                <ul class="header-menu">
+
+                    <!--首页-->
+                    <li class="item-nav">
+                        <a href="../html/FirstPage.html" class="item-ltn  ">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首页<p></p>
+                        </a>
+                        <span></span>
+
+                        <a href="../html/FirstPage.html" class="item-stn  ">
+                            首页
+                            <i class="icon-next"></i>
+                        </a>
+                    </li>
+                    <li class="item-nav">
+                        <a href="../html/shoplist.html" class="item-ltn  ">
+                            &nbsp;&nbsp;茶叶介绍<p></p>
+                        </a>
+                        <span></span>
+
+                        <a href="../html/shoplist.html" class="item-stn  ">
+                            茶叶介绍
+                            <i class="icon-next"></i>
+                        </a>
+                    </li>
+                    <li class="item-nav">
+                        <a href="../html/introduceChina.html" class="item-ltn  ">
+                            中国历史茶文化<p></p>
+                        </a>
+                        <span></span>
+
+                        <a href="../html/introduceChina.html" class="item-stn ">
+                            中国历史茶文化
+                            <i class="icon-next"></i>
+                        </a>
+
+                        <div class="subnav-wrap">
+
+                            <div class="subNav-menu">
+                                <ul>
+                                    <li>
+
+                                        <a href="../html/introduceChina.html#三国以前茶文化">三国前茶文化</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/introduceChina.html#晋代茶文化">晋代茶文化</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/introduceChina.html#隋唐茶文化">隋唐茶文化</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/introduceChina.html#宋代茶文化">宋代茶文化</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/introduceChina.html#明清茶文化">明清茶文化</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/introduceChina.html#现代的发展">现代的发展</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-nav">
+                        <a href="../html/enjoyTea.html" class="item-ltn ">
+                            外国饮茶文化<p></p>
+                        </a>
+                        <span></span>
+
+                        <a href="../html/enjoyTea.html" class="item-stn ">
+                            外国饮茶文化<i class="icon-next"></i>
+                        </a>
+
+                        <div class="subnav-wrap">
+
+                            <div class="subNav-menu">
+                                <ul>
+                                    <li>
+
+                                        <a href="../html/enjoyTea.html#美国饮茶文化">美国</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/enjoyTea.html#英国饮茶文化">英国</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/enjoyTea.html#法国饮茶文化">法国</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/enjoyTea.html#巴基斯坦饮茶文化">巴基斯坦</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/enjoyTea.html#俄罗斯饮茶文化">俄罗斯</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/enjoyTea.html#伊朗饮茶文化">伊朗</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/enjoyTea.html#韩国饮茶文化">韩国</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/enjoyTea.html#日本饮茶文化">日本</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+            </nav>
+        </div>
+    </header>
+
+
+
+        <div class="rbtControl">
+            <div class="textBox wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+                <h3>综述<a name="综述"></a></h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;茶，作为世界三大健康饮品之一，足迹遍布了整个世界。而各个地区的饮茶习俗、文化又有着争奇斗艳的特色。不同的茶俗，反映了不同民族、地区、国家的不同价值理念和文化取向。下面选取了一些代表国家和地区，去领略同一片绿叶，被赋予的不同内涵。</p>
+            </div>
+
+            <br/><br/><br/><br/><br/><br/>
+            <h3><a name="美国饮茶文化"></a></h3>
+            <img src="https://pic.imgdb.cn/item/6397e944b1fccdcd36a5bdf9.jpg" width="100%">
+            <div class="textBox wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+                <h3>美国饮茶文化</h3>
+                <p>•<strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong>在美国市场上中国的乌龙茶、绿茶等有上百种，但多是罐装的冷饮茶，饮茶讲求效率、方便。</p>
+                <p>•<strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong>大多数人喜欢饮冰茶，而不是热茶，闻之冷沁鼻，啜饮凉齿爽口，顿觉胸中清凉，如沐春风。</p>
+                <p>•<strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong>茶以饮、以凉为主，没有中国茶沏出的那种品味、那种温馨、那种悠闲。</p>
+            </div>
+
+            <br/><br/><br/>
+            <h3><a name="英国饮茶文化"></a></h3>
+            <img src="https://pic.imgdb.cn/item/6397e944b1fccdcd36a5bdf9.jpg" width="100%">
+            <div class="textBox wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+                <h3>英国饮茶文化</h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;茶是英国人普遍喜爱的饮料，80%的英国人每天饮茶，茶叶消费量约占各种饮料总消费量的一半。英国本土不产茶，而茶的人均消费量占全球首位，因此，茶的进口量长期遥居世界第一。英国饮茶，始于17世纪中期，1662年葡萄牙凯瑟琳公主嫁与英国查尔斯二世，饮茶风尚带入皇家。凯瑟琳公主视茶为健美饮料，嗜茶、崇茶而被人称为“饮茶皇后”，由于她的倡导和推动，使饮茶之风在朝廷盛行起来，继而又扩展到王公贵族和贵豪世家及至普通百姓。</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;英国人好饮红茶，特别崇尚汤浓味醇的牛奶红茶和柠檬红茶，伴随而来的还出现了反映西方色彩的茶娘、茶座、茶会以及饮茶舞会等。英国人他们特别注重午后饮茶，多数在上午10时至下午5时进行。午后茶实质上是一餐简化了的茶点，一般只供应一杯茶和一碟糕点，只有招待贵宾时，内容才会丰富。</p>
+            </div>
+
+            <br/><br/><br/>
+            <h3><a name="法国饮茶文化"></a></h3>
+            <img src="https://pic.imgdb.cn/item/6397e944b1fccdcd36a5bdf9.jpg" width="100%">
+            <div class="textBox wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+                <h3>法国饮茶文化</h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;法国，位于欧洲西部，西靠大西洋。自茶作为饮料传到欧洲后，就立即引起法国人民的重视。以后，几经宣传和实践，激发了法国人民对“可爱的中国茶”的向往和追求，使法国饮茶从皇室贵族和有闲阶层中，逐渐普及到民间，成为人们日常生活和社交不可或缺的一部分。</p>
+                <h6>•<strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong>绿茶</h6>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;要求绿茶必须是高品质的，一般要在茶汤中加入方糖和新鲜薄荷叶，做成甜蜜透香的清凉饮料饮用。</p>
+                
+                <h6>•<strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong>红茶</h6>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通常取一小撮红茶或一小包袋泡红茶放入杯内，冲上沸水，再配以糖或牛奶和糖；也有在茶中拌以新鲜鸡蛋，再加糖冲饮；有流行饮用瓶装茶水时加柠檬汁或橘子汁；有的还会在茶水中掺入杜松子酒或威士忌酒，做成清凉的鸡尾酒饮用。　</p>
+                <h6>•<strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong>花茶</h6>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;与中国北方人饮花茶的方式相同，习惯于用茶壶加沸水冲泡，通常不加佐料推崇清饮。</p>
+                <h6>•<strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong>沱茶</h6>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;主产于中国西南地区，具有特殊的药理功能，深受法国养生益寿者特别是中老年消费者的青睐，每年从中国进口量达2000吨，有袋泡沱茶和山沱茶等。</p>
+            </div>
+
+            <br/><br/><br/>
+            <h3><a name="巴基斯坦饮茶文化"></a></h3>
+            <img src="https://pic.imgdb.cn/item/6397e944b1fccdcd36a5bdf9.jpg" width="100%">
+            <div class="textBox wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+                <h3>巴基斯坦饮茶文化</h3>
+                <p>•<strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong>普遍爱好是牛奶红茶，一般以茶、奶、糖按1：4：3的比例冲泡调饮，也喜欢味浓的红茶。</p>
+                <p>•<strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong>大多采用茶炊烹煮法，即先将开水壶中水煮沸，尔后放上红茶，再烹煮3-5分钟随即用过滤器滤去茶渣，然后将茶汤注入茶杯，再加上牛奶和糖调匀即饮，另外也有少数不加牛奶而代之以柠檬片的，又叫柠檬红茶。</p>
+                <p>•<strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong>在巴基斯坦的西北高地以及靠近阿富汗边境的牧民也有爱饮绿茶的,饮绿茶时多配以白糖并加几粒小豆蔻，以增加清凉味。</p>
+
+            </div>
+
+            <br/><br/><br/>
+            <h3><a name="俄罗斯饮茶文化"></a></h3>
+            <img src="https://pic.imgdb.cn/item/6397e944b1fccdcd36a5bdf9.jpg" width="100%">
+            <div class="textBox wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+                <h3>俄罗斯饮茶文化</h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;早在十九世纪下半叶，俄罗斯就是中国茶叶的最大买主，那时候中国茶叶的出口量百分之七十五都卖给沙皇时期的俄国。莫斯科市中心中国城社区有十九世纪雕龙画栋的中国茶行，可见证当时双方茶叶贸易的兴盛。</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;为了喝茶，俄罗斯人家里都有一个特殊的茶炊，它们称为「萨莫瓦尔」。以前茶炊是铜制的，有点像台湾台电福利社东北火锅，中间是放木炭、冒烟的桶子，底下是放煮水的锅，唯一差别是俄罗斯茶炊有一个水龙头，水煮开后，就从小水龙头放水泡茶。这种旧式茶炊只有在莫斯科跳蚤市场看得到。</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;现代「萨莫瓦尔」兼具传统与新潮，它外表漆得非常有斯拉夫民族的风味，也不用炭烧而用电加热，体积变小，而且用电烧水不会弄得乌烟濔漫。主要是现在俄罗斯家里人口变少了，家庭人口少，因此不需要大容量的茶炊了。俄罗斯人泡茶后，要用一个做成各种母鸡或俄罗斯大妈形状的套子罩在茶壶上，等茶泡开了往茶杯倒。</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;俄罗斯泡的茶特别浓。所以他们先倒半杯浓茶，然后加热开水，再加两块方糖与柠檬片。由于俄罗斯人喝茶程序非常复杂，俄国人对茶也比较讲究，不仅要有茶杯，还要有茶托，连用玻璃杯喝茶，也要把杯子放在金属套内。</p>
+
+            </div>
+
+            <br/><br/><br/>
+            <h3><a name="伊朗饮茶文化"></a></h3>
+            <img src="https://pic.imgdb.cn/item/6397e944b1fccdcd36a5bdf9.jpg" width="100%">
+            <div class="textBox wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+                <h3>伊朗饮茶文化</h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;因为伊朗禁酒，以茶代酒，许多伊朗人每天非茶不欢，喝茶的次数也多得惊人，一天十五六杯是最起码的。伊朗国内大大小小的茶室遍布各地，在伊朗北部大城大不里士（Tabriz）有间桑葚茶室。那是间别具风味的露天茶室，设在成排桑葚树下。</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;伊朗人喝茶，有个很奇特的方式——喝茶时糖块不是放进茶里搅和的，而是直接放入口中再去啜茶。伊朗的糖，呈现不规则的结晶体，一片片薄薄的，晶亮的黄色，轻轻一咬，“卡卡”数声，糖片分崩离析，再悠悠然地把茶啜入嘴里，让它慢慢地与口内的甜味中和，在味蕾上泛起一圈又一圈的令人心驰神往的涟漪。有些糖片还镶嵌着柠檬皮，一咬，满嘴生津，这时，赶紧将略带涩味的茶灌入口中，以舌尖略略搅和，那种甘醇已极的好味道，足以使头发“轰”的一声全都直直地立起来。</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一般较为简陋的茶室并不备有这些薄片糖晶，仅仅只供给一般化的方块白糖。伊朗人惯常的做法是：以拇指和食指拈着糖块，蘸了蘸茶，放进口里，等它在舌上欲融未融之际，便啜茶入口，与糖中和。                </p>
+
+            </div>
+
+            <br/><br/><br/>
+            <h3><a name="韩国饮茶文化"></a></h3>
+            <img src="https://pic.imgdb.cn/item/6397e944b1fccdcd36a5bdf9.jpg" width="100%">
+            <div class="textBox wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+                <h3>韩国饮茶文化</h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;韩国的民族史有5千多年,从新囫时代开始就有茶文化,成为韩国传统文化的一部分.韩国茶礼“和、敬、俭、美”基本精神，体现了心地善良，以礼待人，俭朴廉政和以诚相待。成人茶礼是韩国茶日的重要活动之一。</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;韩国自古以来就以“礼仪之邦”著称，家庭，社会生活的各个方面都非常重视礼节。成人茶礼是通过茶礼仪式，对刚满20岁的少男少女进行传统文化和礼仪教育，其程序是司会主持成人者赞者同时入场，会长献烛，副会长献花，冠者（即成年）进场向父母致礼向宾客致礼，司会致成年祝辞，进行献茶式，成年合掌致答辞，成年再拜父母，父母答礼。冠礼者13人，其中女性8人，男性5人。</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高丽五行茶礼气势宏伟，规模更大，展现的是向茶圣炎帝神家氏神位献茶仪式。唐代陆羽著有《茶经》，被人称为茶圣，茶神。韩国则把中国上古时代的部落首领炎帝神家找称作茶圣，古代传说中神家日遇七十二毒，得茶而解之，神家是发现茶，利用茶的先行者，高丽五行茶是韩国为纪念神家氏而编排出来的一种献茶仪式，是高丽茶礼中的功德祭。高丽五行茶献茶礼是国家级进茶仪式，反映出高丽茶法，宇宙趔和五行哲理，是一种茶道礼，是高丽时代茶文化的再现。茶礼全过程充满了诗情画意和民族风情。</p>
+
+            </div>
+
+            <br/><br/><br/>
+            <h3><a name="日本饮茶文化"></a></h3>
+            <img src="https://pic.imgdb.cn/item/6397e944b1fccdcd36a5bdf9.jpg" width="100%">
+            <div class="textBox wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+                <h3>日本饮茶文化</h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;日本人饮茶以“茶道”出名，讲究一点的人家都设有茶室。主人迎客入茶室，要跪坐在茶室门口，让客人一个个进去，客人经过门口时，要在门旁洗手，然后脱鞋入茶，主人则最后才进入茶室，和客人鞠躬行礼。主人开始煮茶时客人要退出茶室，到后面花园或石子路走走，让主人自由、从容地准备茶具、煮茶、泡茶。主人泡好茶以后，再让客人再回茶室，然后开始一起饮茶，饮完茶以后，主人还要跪坐在门外，向客人祝福道别。</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;现代日本茶道一般在面积不大、清雅别致的茶室里进行。茶室中间放着供烧水的陶炭（风）炉、茶锅（釜）。炉前排列着专供茶道用的各种沏茶、品茶用具。日本茶道的规矩比较讲究。友人到达时，主人在门口恭候。待宾客坐定，先奉上点心，供客人品尝。然后在炭炉上烧水，将茶放入青瓷碗中。水沸后，由主持人按规程泡茶，依次递给宾客品饮。品茶时要吸气，并发出吱吱声音，表示对主人茶品的赞赏。当喝尽茶汤后，可用大拇指和洁净的纸擦干茶碗，仔细欣赏茶具，且边看边赞“好茶”，以表敬意。仪式结束，客人鞠躬告辞，让人跪坐门侧相送。整个过程，都洋溢着“敬、和、清、寂”的精神。</p>
+            </div>
+
+            <br/><br/><br/>
+            <h3><a name="德国饮茶文化"></a></h3>
+            <img src="https://pic.imgdb.cn/item/6397e944b1fccdcd36a5bdf9.jpg" width="100%">
+            <div class="textBox wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+                <h3>德国饮茶文化</h3>
+                <p>•<strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong>德国的“花茶”是用各种花瓣加上苹果、山楂等果干制成的，里面一片真正的茶叶也没有。</p>
+                <p>•<strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong>德国花茶饮时需放糖，否则会有些涩，德国人饮茶时把茶叶放在细密的金属筛子上不断用开水冲，之后再将茶叶倒掉。</p>
+                
+            </div>
+
+            <br/><br/><br/>
+            <h3><a name="阿根廷饮茶文化"></a></h3>
+            <img src="https://pic.imgdb.cn/item/6397e944b1fccdcd36a5bdf9.jpg" width="100%">
+            <div class="textBox wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+                <h3>阿根廷饮茶文化</h3>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;到处可以看到阿根廷人端着茶壶在津津有味地喝着马黛茶，马黛茶是生长在南美洲地区的一种常绿灌木叶子。阿根廷东北部气候湿润，阳光充足，红色含有矿物质的土壤很适合这种植物的生长。近些年阿根廷马黛茶的生产发展很快，如今年产量达40多万吨，居世界第一位，被称为“马黛茶王国”，全国人均年消费量约7公斤，其余30％用于出口创汇。</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;每年11月的第二个星期，是阿根廷全国的马黛茶节。节日里，在首都街头可以看到许多着装漂亮的少男少女向行人分赠小盒包装的马黛茶。在马黛茶主要产地——米西奥内斯省等地，节日里还要举行高乔人参加的花车游行，竞选“马黛茶女王”，选出的“女王”可以免费到首都和各大海滨城市旅游，并能得到不少珍贵礼品。</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在阿根廷，使用什么样的茶壶招待客人，比喝马黛茶本身更重要，就像西方人待客讲究餐具一样。一般平民百姓使用的马黛茶壶大多是竹筒或葫芦挖空制成的，壶上没有什么装饰。而高档的茶壶则是一种艺术品，做工精致，有金属模压的，有硬木雕琢的，有葫芦镶边的，也有皮革包裹的，还有牛角磨制的，形状千奇百怪，以怪为贵。壶的外壁刻有马头、鹦鹉、山水、花鸟、天使等各种图案，有的被视为“带来好运”的祝福，有的象征“怀念”或“友谊”。商店里陈列的高档茶壶还镶有各种颜色的宝石，在灯光照射下发出五颜六色的光彩。来到阿根廷的外国游客都喜欢买个马黛茶壶带回去留个纪念。</p>
+            </div>
+
+            <br/><br/><br/>
+            <h3><a name="亚洲其他国家饮茶文化"></a></h3>
+            <img src="https://pic.imgdb.cn/item/6397e944b1fccdcd36a5bdf9.jpg" width="100%">
+            <div class="textBox wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+                <h3>亚洲其他国家饮茶文化</h3>
+                <p>•<strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong>东南亚如马来西亚、新加坡等国家受汉文化影响较深，习惯冲泡清饮乌龙、普洱、花茶。</p>
+                <p>•<strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong>韩国因受中国和日本双重文化的影响，兴起“茶礼”习俗。</p>
+                <p>•<strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong>港澳地区则沿袭闽粤饮茶习俗，以饮普洱、水仙、花茶为主。泰国、缅甸和云南地区相似，习惯吃“腌茶”，将生茶腌制成酸味制品，吃时拌入食盐、生姜、花生等，干嚼佐餐。</p>
+                <p>•<strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong>南亚的印度、孟加拉、斯里兰卡等国家饮甜味红茶或甜味红奶茶。</p>
+                <p>•<strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong>印度饮茶总量居世界第一位，喜欢味浓的加糖红茶。</p>
+                <p>•<strong>&nbsp;&nbsp;&nbsp;&nbsp;</strong>西亚地区的土耳其人，不论大人小孩都喜欢红茶，城乡茶馆遍布，出门饮茶也方便。</p>
+            </div>
+
+
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        </div>
+
+    <script src="../js/wow.js"></script>
+    <script>
+        $(function () {
+            console.log($('.nl-txt-p').html().substr(0, 2))
+            let n = $(".nl-txt-p").offsetHeight
+            for (let i = 0; i < $('.nl-txt-p').html().length; i++) {
+                $('.nl-txt-p').innerHTML = $('.nl-txt-p').html().substr(0, i)
+                if (n < $('.nl-txt-p').scrollHight) {
+                    console.log("执行")
+                    $('.nl-txt-p').style.overflow = 'hidden';
+                    $('.nl-txt-p').innerHTML = $('.nl-txt-p').html().substr(0, i - 3) + '...';
+                    break;
+                }
+            }
+
+
+            var gtBool = true,
+                gtTime = null;
+            gtTime = setInterval(function () {
+                if (gtBool) {
+                    $('.gw-txt').html('<span class="animated textInUp">Loading...</span>')
+                    gtBool = false;
+                } else {
+                    $('.gw-txt').html('<span class="animated textInUp">Loading Completed</span>');
+                    gtBool = true;
+                }
+            }, 500);
+
+            var guide = {
+                star: function () {
+                    var winHegith = $(window).height();
+                    TweenMax.to(".guide-wave", 1, {
+                        height: 0,
+                        delay: .8
+                    });
+                    TweenMax.to(".guide-wrap", .8, {
+                        height: 0,
+                        delay: 1.4
+                    });
+                    TweenMax.to(".gw-logo", 1.5, {
+                        y: -400,
+                        delay: .8
+                    });
+                    TweenLite.fromTo('.gw-txt', .4, {
+                        opacity: 1
+                    }, {
+                        opacity: 0,
+                        delay: .5
+                    });
+                },
+                __init: function () {
+                    guide.star();
+                    clearInterval(gtTime);
+                }
+            }
+
+            guide.__init();
+
+            indexPage.__init();
+
+            //窗口高度变化执行
+            function watchWindowSize() {
+                var h = document.documentElement.clientHeight; //窗口高度  不包括滚动条
+                var statementDom = document.getElementById("statement") //获取到“严正声明”内容部分
+                var statementHeight = h - 320 //根据窗口高度设置内容高度
+                statementDom.style.height = statementHeight + 'px' //将高度赋值给元素
+            }
+            window.onload = function () {
+                watchWindowSize()
+            }
+            //监听窗口变化
+            window.addEventListener("resize", watchWindowSize);
+        });
+        var swiperCon = new Swiper('.swiper', {
+            spaceBetween: 10, //在slide之间设置距离（单位px）
+            loop: true,
+            autoplay: true,
+            speed: 500,
+            autoplay: {
+                disableOnInteraction: false, //用户操作swiper之后自动切换不会停止，每次都会重新启动autoplay。
+            },
+            grabCursor: true, //鼠标覆盖Swiper时指针会变成手掌形状，拖动时指针会变成抓手形状。
+            //分页器
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'custom', //分页器类型 自定义
+                clickable: true, //此参数设置为true时，点击分页器的指示点分页器会控制Swiper切换。
+                //自定义特殊类型分页器，当分页器类型设置为自定义时可用。
+                renderCustom: function (swiper, current, total) {
+                    var customPaginationHtml = "";
+                    for (var i = 0; i < total; i++) {
+                        //判断哪个分页器此刻应该被激活
+                        if (i == (current - 1)) {
+                            customPaginationHtml += '<span class="swiper-pagination-customs swiper-pagination-customs-active"></span>';
+                        } else {
+                            customPaginationHtml += '<span class="swiper-pagination-customs"></span>';
+                        }
+                    }
+                    return customPaginationHtml;
+                },
+            },
+        })
+        // 自定义分页器点击切换
+        $(".swiper-pagination").on("click", "span", function () {
+            var index = $(this).index();
+            swiperCon.slideTo(index + 1);
+        })
+    </script>
+
+    <script type="text/javascript">
+        $(function(){
+            var domain = document.domain;
+            if(domain.indexOf('nokov.com.cn') >= 0) {
+                $('.keep_on_record').text('');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

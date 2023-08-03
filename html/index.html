@@ -1,0 +1,46 @@
+<!-- 登录页面 -->
+<html>
+<head>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/jquery.params.js"></script>
+    <title>茶文化</title>
+    <!-- <script >
+       
+        function jump1(){
+            var id = document.getElementById('id');
+            url = "shoplist.html?name="+id.value;//此处拼接内容
+            window.location.href = url;
+        }
+    </script> -->
+    <style>
+        @import "../css/index.css";
+    </style>
+</head>
+
+<div class="box">
+    <text class="loginTitle">密码登录</text>
+    <form action="./FirstPage.html">
+        <div class="inputBox input1">
+            <text class="inputItem">账号</text>
+            <input name="id" placeholder="请输入账号" type="text" />           
+        </div>
+        <div class="inputBox input2">
+            <text class="inputItem">密码</text>
+            <input type="password" name="pwd" placeholder="请输入密码"/>
+            
+        </div>
+        
+        <div align="center">
+            <input type="submit"  value="登录" >
+            <!-- <button id="btn" class="button1" style="right:0"onclick="jump1()">登录</button> -->
+
+            <a href="register.html"><input type="button"   value="注册"></a>
+        </div>
+        <div align="center">
+            <a href="index.html"><input type="reset"   value="重置"></a>
+        </div>
+    </form>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="茶文化">
+    <meta name="description"
+        content="茶文化">
+    <meta name="author" content="mxbc.com">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="baidu-site-verification" content="iYCr85cYyJ" />
+    <title>茶叶介绍</title>
+   <!-- <link rel="icon" href="/favicon.ico?v=20220330"> -->
+   <link rel="stylesheet" href="../css/icon.css">
+   <link rel="stylesheet" href="../css/hearderCss.css"><!-- https://www.mxbc.com/assets/css/hearderCss.css -->
+   <link rel="stylesheet" href="../css/footer.css">
+   <link rel="stylesheet" href="../css/swiper_bundle.css">
+   <link rel="stylesheet" href="../css/indexCss.css">
+   <!-- 文字部分引用的css -->
+   <link rel="stylesheet" type="text/css" href="../css/text.css"/>
+   <script type="text/javascript" src="../js/jquery.js"></script>
+    <style>
+        #mmm {
+
+            position: relative;
+            animation: mymove 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+
+            /* Safari 和 Chrome */
+            -webkit-animation: mymove 3s;
+            -webkit-animation-iteration-count: 1;
+            -webkit-animation-fill-mode: forwards;
+        }
+
+        .inner1 {
+            width: 100%;
+            padding-left: 0;
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transition: all .6s ease-out;
+            transition: all .6s ease-out;
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+        }
+
+        @keyframes mymove {
+            from {
+                left: 0px;
+            }
+
+            to {
+                left: 40px;
+            }
+        }
+
+        @-webkit-keyframes mymove
+
+        /* Safari 和 Chrome */
+            {
+            from {
+                left: 0px;
+            }
+
+            to {
+                left: 40px;
+            }
+        }
+    </style>
+    <script type="text/javascript">
+        var paramobj = {};
+        window.onload = function () {
+            //此时parameterURL为:name=张三&age=25
+            var parameterURL = location.search.substring(1, location.search.length);
+            //此时paramArr为一个数组:["name=张三","age=25"]
+            var paramArr = parameterURL.split("&");
+            var key, value, temp;
+            //定义2个变量接收key，value并存到paramobj中
+            for (i = 0; i < paramArr.length; i++) {
+                temp = paramArr[i].split("=");
+                if (temp.length === 1) {
+                    paramobj[temp[0]] = "";
+                }
+                else if (temp.length > 1) {
+                    for (j = 0; j < temp.length; j++) {
+                        paramobj[temp[0]] = decodeURIComponent(temp[1]);
+                    }
+                }
+            }
+            //此时参数已全部保存至paramobj中,这里显示到div
+            var showStr = "";
+            for (var a in paramobj) {
+                showStr += (paramobj[a]);
+            }
+            document.getElementById("showParam").innerText = showStr;
+        }
+    </script>
+</head>
+
+<body class="cooperation has-bgPic">
+
+    <header class="header">
+        <div class="header-main relative">
+            <nav class="header-nav larze-head__nav">
+                <a href="/" class="item-logo">
+                    <img src="../img/logo.jpg" alt="">
+                </a>
+                <ul class="header-menu">
+
+                    <!--首页-->
+                    <li class="item-nav">
+                        <a href="../html/FirstPage.html" class="item-ltn  ">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首页<p></p>
+                        </a>
+                        <span></span>
+
+                        <a href="../html/FirstPage.html" class="item-stn  ">
+                            首页
+                            <i class="icon-next"></i>
+                        </a>
+                    </li>
+                    <li class="item-nav">
+                        <a href="../html/shoplist.html" class="item-ltn  ">
+                            &nbsp;&nbsp;茶叶介绍<p></p>
+                        </a>
+                        <span></span>
+
+                        <a href="../html/shoplist.html" class="item-stn  ">
+                            茶叶介绍
+                            <i class="icon-next"></i>
+                        </a>
+                    </li>
+                    <li class="item-nav">
+                        <a href="../html/introduceChina.html" class="item-ltn  ">
+                            中国历史茶文化<p></p>
+                        </a>
+                        <span></span>
+
+                        <a href="../html/introduceChina.html" class="item-stn ">
+                            中国历史茶文化
+                            <i class="icon-next"></i>
+                        </a>
+
+                        <div class="subnav-wrap">
+
+                            <div class="subNav-menu">
+                                <ul>
+                                    <li>
+
+                                        <a href="../html/introduceChina.html#三国以前茶文化">三国前茶文化</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/introduceChina.html#晋代茶文化">晋代茶文化</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/introduceChina.html#隋唐茶文化">隋唐茶文化</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/introduceChina.html#宋代茶文化">宋代茶文化</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/introduceChina.html#明清茶文化">明清茶文化</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/introduceChina.html#现代的发展">现代的发展</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-nav">
+                        <a href="../html/enjoyTea.html" class="item-ltn ">
+                            外国饮茶文化<p></p>
+                        </a>
+                        <span></span>
+
+                        <a href="../html/enjoyTea.html" class="item-stn ">
+                            外国饮茶文化<i class="icon-next"></i>
+                        </a>
+
+                        <div class="subnav-wrap">
+
+                            <div class="subNav-menu">
+                                <ul>
+                                    <li>
+
+                                        <a href="../html/enjoyTea.html#美国饮茶文化">美国</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/enjoyTea.html#英国饮茶文化">英国</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/enjoyTea.html#法国饮茶文化">法国</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/enjoyTea.html#巴基斯坦饮茶文化">巴基斯坦</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/enjoyTea.html#俄罗斯饮茶文化">俄罗斯</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/enjoyTea.html#伊朗饮茶文化">伊朗</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/enjoyTea.html#韩国饮茶文化">韩国</a>
+                                    </li>
+                                    <li>
+
+                                        <a href="../html/enjoyTea.html#日本饮茶文化">日本</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+            </nav>
+        </div>
+    </header>
+
+
+    <!--百度-->
+    <h1 class="top_logo" style="font-size:0;"><a
+            style="display:block;width:0%;height:0%; background: url();"
+            href="" title="茶文化">茶文化</a></h1>
+    <!--首页部分的巨幕-->
+
+    <!--严重声明-->
+
+
+    <!--轮播-->
+    <div class="wrap">
+        <!-- 那个轮播图查放在这 -->
+
+        <section class="in-materials__full in-scroll__sec pt-150">
+    
+    <div class="w1600 in-box relative">
+        <div class="inm-intro__slick wow fadeInUp" data-wow-duration="0.01s">
+            <div>
+                <div class="item-box">
+                    <div class="pic-box">
+                        <div class="pic-1">
+                            <img class="lazyload" src=""
+                                data-original="../img/teagarden.png" alt="">
+                        </div>
+                        <div class="pic-2">
+                            <img class="lazyload" src=""
+                                data-original="../img/leaf.png" alt="">
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <div class="title fs60">绿茶 （不发酵）</div>
+                        <div class="txt">
+                            <p>工艺特点在于鲜叶采摘后迅速以高温杀灭鲜叶中的酶类物质，抑制茶多酚氧化.</p>
+                            <p>有干茶绿、茶汤绿、叶底绿的“三绿”特点.</p>
+                            <p>富含叶绿素、维C，茶性较寒凉，茶碱含量高，较易剌激神经.</p>
+                            <p>代表性茶叶：西湖龙井、碧螺春、黄山毛峰</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="item-box">
+                    <div class="pic-box">
+                        <div class="pic-1">
+                            <img class="lazyload" src=""
+                                data-original="../img/garden4.png" alt="">
+                        </div>
+                        <div class="pic-2">
+                            <img class="lazyload" src=""
+                                data-original="../img/while1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <div class="title fs60">白茶 （微发酵）</div>
+                        <div class="txt">
+                            <p>制作工艺最自然，采摘嫩芽后自然摊晾和文火烘干，让其茶多酚自然氧化.</p>
+                            <p>白茶成茶满披白毫，如银似雪.</p>
+                            <p>其汤色浅，味清鲜爽口。性清凉，有退热降火之功效.</p>
+                            <p>代表性茶叶：白毫银针、白牡丹</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="item-box">
+                    <div class="pic-box">
+                        <div class="pic-1">
+                            <img class="lazyload" src=""
+                                data-original="../img/garden.png" alt="">
+                        </div>
+                        <div class="pic-2">
+                            <img class="lazyload" src=""
+                                data-original="../img/yellow4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <div class="title fs60">黄茶  （微发酵茶）</div>
+                        <div class="txt">
+                            <p>在绿茶基础上加以闷黄工艺，有黄叶黄汤之特点。</p>
+                            <p>滋味甘香醇爽，回甘生津.</p>
+                            <p>可提神醒脑，消除疲劳，消食化滞。</p>
+                            <p>代表性茶叶：君山银针、霍山黄芽、蒙顶黄芽</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="item-box">
+                    <div class="pic-box">
+                        <div class="pic-1">
+                            <img class="lazyload" src=""
+                                data-original="../img/garden6.png" alt="">
+                        </div>
+                        <div class="pic-2">
+                            <img class="lazyload" src=""
+                                data-original="../img/wulong3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <div class="title fs60">乌龙茶  （半发酵茶）</div>
+                        <div class="txt">
+                            <p>工艺复杂费时，做青是重要工序。特殊的香气，绿叶红镶边.</p>
+                            <p>兼具绿茶的清香和红茶的醇厚，香气从清新花香到熟果香都有。</p>
+                            <p>性温凉，略具叶绿素，维C、茶碱.</p>
+                            <p>代表性茶叶：冻顶乌龙、武夷岩茶、安溪铁观音</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="item-box">
+                    <div class="pic-box">
+                        <div class="pic-1">
+                            <img class="lazyload" src=""
+                                data-original="https://en.mxbc.com/images/2-1.png" alt="">
+                        </div>
+                        <div class="pic-2">
+                            <img class="lazyload" src=""
+                                data-original="../img/red.png" alt="">
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <div class="title fs60">红茶  （全发酵茶）</div>
+                        <div class="txt">
+                            <p>与绿茶的区别在于制作多了一道发酵工序.</p>
+                            <p>红茶干茶色泽乌黑油润，香气一般较高扬持久，汤色和叶底都呈红色.</p>
+                            <p>有股甜甜的花果香味，口感香醇无涩。性质温和，茶碱较少，兴奋效能较低.</p>
+                            <p>代表性茶叶：祁门红茶、滇红、宁红</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="item-box">
+                    <div class="pic-box">
+                        <div class="pic-1">
+                            <img class="lazyload" src=""
+                                data-original="../img/teagarden.png" alt="">
+                        </div>
+                        <div class="pic-2">
+                            <img class="lazyload" src=""
+                                data-original="../img/break.png" alt="">
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <div class="title fs60">黑茶 （后发酵茶）</div>
+                        <div class="txt">
+                            <p>其发酵不是利用茶叶本身的酶，而是来自微生物产生的酶.</p>
+                            <p>黑茶干一般色泽乌润，汤色澄黄透亮，香气醇和，滋味醇厚回甘.</p>
+                            <p>性温和，可促进消化与吸收，降三高.</p>
+                            <p>代表性茶叶：湖南安化黑茶、普洱茶、六堡茶</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-arrow">
+            <a href="javascript:;" class="sa-btn sa-prev">
+                <i class="icon-prev"></i>
+            </a>
+            <a href="javascript:;" class="sa-btn sa-next">
+                <i class="icon-next"></i>
+            </a>
+        </div>
+
+        <div class="inm-dots__slick wow fadeInRight" data-wow-duration="0.5s">
+            <div class="item-box  on ">
+                <a href="javascript:;">
+                    <div class="pic">
+                        <div class="dec">
+                            <img class="lazyload pic-2" src="assets/img/grey.gif"
+                                data-original="../img/leaf.png" alt="">
+                        </div>
+                        <span>绿茶</span>
+                    </div>
+                </a>
+            </div>
+            <div class="item-box ">
+                <a href="javascript:;">
+                    <div class="pic">
+                        <div class="dec">
+                            <img class="lazyload pic-2" src="http://yctea.com/images/home/c.png"
+                                data-original="http://yctea.com/images/home/c.png" alt="">
+                        </div>
+                        <span>白茶</span>
+                    </div>
+                </a>
+            </div>
+            <div class="item-box ">
+                <a href="javascript:;">
+                    <div class="pic">
+                        <div class="dec">
+                            <img class="lazyload pic-2" src="assets/img/grey.gif"
+                                data-original="../img/yellow3.png" alt="">
+                        </div>
+                        <span>黄茶</span>
+                    </div>
+                </a>
+            </div>
+            <div class="item-box ">
+                <a href="javascript:;">
+                    <div class="pic">
+                        <div class="dec">
+                            <img class="lazyload pic-2" src="assets/img/grey.gif"
+                                data-original="../img/tea.png" alt="">
+                        </div>
+                        <span>乌龙茶</span>
+                    </div>
+                </a>
+            </div>
+            <div class="item-box ">
+                <a href="javascript:;">
+                    <div class="pic">
+                        <div class="dec">
+                            <img class="lazyload pic-2" src="assets/img/grey.gif"
+                                data-original="../img/redleaf.png" alt="">
+                        </div>
+                        <span>红茶</span>
+                    </div>
+                </a>
+            </div>
+            <div class="item-box ">
+                <a href="javascript:;">
+                    <div class="pic">
+                        <div class="dec">
+                            <img class="lazyload pic-2" src="assets/img/grey.gif"
+                                data-original="../img/break.png" alt="">
+                        </div>
+                        <span>黑茶</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="pt-150"></div>
+    </section>
+    <section class="in-news__full list-news mt-150">
+        <div class="in-sec__title fs60"></div>
+        <p class="nl-txt-p"></p>
+        <div class="mt-120"></div>
+    </section>
+    </div>
+    <!--页尾-->
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/tween.js"></script>
+    <script src="../js/slick.js"></script>
+   
+    <script>
+        $(function () {
+            //				$(".nl-txt-p").each(function(){
+            //					$(this).replaceWith("<div>"+$(this).html()+"</div>")
+            //				})
+            console.log($('.nl-txt-p').html().substr(0, 2))
+            let n = $(".nl-txt-p").offsetHeight
+            for (let i = 0; i < $('.nl-txt-p').html().length; i++) {
+                $('.nl-txt-p').innerHTML = $('.nl-txt-p').html().substr(0, i)
+                if (n < $('.nl-txt-p').scrollHight) {
+                    console.log("执行")
+                    $('.nl-txt-p').style.overflow = 'hidden';
+                    $('.nl-txt-p').innerHTML = $('.nl-txt-p').html().substr(0, i - 3) + '...';
+                    break;
+                }
+            }
+
+
+            var gtBool = true,
+                gtTime = null;
+            gtTime = setInterval(function () {
+                if (gtBool) {
+                    $('.gw-txt').html('<span class="animated textInUp">Loading...</span>')
+                    gtBool = false;
+                } else {
+                    $('.gw-txt').html('<span class="animated textInUp">Loading Completed</span>');
+                    gtBool = true;
+                }
+            }, 500);
+            
+
+            var guide = {
+                star: function () {
+                    var winHegith = $(window).height();
+                    TweenMax.to(".guide-wave", 1, {
+                        height: 0,
+                        delay: .8
+                    });
+                    TweenMax.to(".guide-wrap", .8, {
+                        height: 0,
+                        delay: 1.4
+                    });
+                    TweenMax.to(".gw-logo", 1.5, {
+                        y: -400,
+                        delay: .8
+                    });
+                    TweenLite.fromTo('.gw-txt', .4, {
+                        opacity: 1
+                    }, {
+                        opacity: 0,
+                        delay: .5
+                    });
+                },
+                __init: function () {
+                    guide.star();
+                    clearInterval(gtTime);
+                }
+            }
+
+            // $('.guide-wrap,.statement-wrap').show();
+            guide.__init();
+
+            indexPage.__init();
+
+            //窗口高度变化执行
+            function watchWindowSize() {
+                var h = document.documentElement.clientHeight; //窗口高度  不包括滚动条
+                var statementDom = document.getElementById("statement") //获取到“严正声明”内容部分
+                var statementHeight = h - 320 //根据窗口高度设置内容高度
+                statementDom.style.height = statementHeight + 'px' //将高度赋值给元素
+            }
+            window.onload = function () {
+                watchWindowSize()
+            }
+            //监听窗口变化
+            window.addEventListener("resize", watchWindowSize);
+        });
+        var swiperCon = new Swiper('.swiper', {
+            spaceBetween: 10, //在slide之间设置距离（单位px）
+            loop: true,
+            autoplay: true,
+            speed: 500,
+            autoplay: {
+                disableOnInteraction: false, //用户操作swiper之后自动切换不会停止，每次都会重新启动autoplay。
+            },
+            grabCursor: true, //鼠标覆盖Swiper时指针会变成手掌形状，拖动时指针会变成抓手形状。
+            //分页器
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'custom', //分页器类型 自定义
+                clickable: true, //此参数设置为true时，点击分页器的指示点分页器会控制Swiper切换。
+                //自定义特殊类型分页器，当分页器类型设置为自定义时可用。
+                renderCustom: function (swiper, current, total) {
+                    var customPaginationHtml = "";
+                    for (var i = 0; i < total; i++) {
+                        //判断哪个分页器此刻应该被激活
+                        if (i == (current - 1)) {
+                            customPaginationHtml += '<span class="swiper-pagination-customs swiper-pagination-customs-active"></span>';
+                        } else {
+                            customPaginationHtml += '<span class="swiper-pagination-customs"></span>';
+                        }
+                    }
+                    return customPaginationHtml;
+                },
+            },
+        })
+        // 自定义分页器点击切换
+        $(".swiper-pagination").on("click", "span", function () {
+            var index = $(this).index();
+            swiperCon.slideTo(index + 1);
+        })
+    </script>
+</body>
+
+</html>
